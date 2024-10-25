@@ -98,15 +98,16 @@ const HeroSection: React.FC = () => {
             title={
               <FallInPlace>
                 Build beautiful
-                <Br /> software faster
+                <Br /> e-commerce store in a few seconds
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
-              </FallInPlace>
+             Wavyi is a <Em>E-commerce Builder</Em>
+              <Br /> that simplifies the process of building <Br />{" "}
+              intuitive e-commerce platforms quickly and efficiently.
+            </FallInPlace>
+            
             }
           >
             <FallInPlace delay={0.8}>
@@ -115,7 +116,7 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
+                <ButtonLink colorScheme="blue" size="lg" href="/signup">
                   Sign Up
                 </ButtonLink>
                 <ButtonLink
@@ -174,9 +175,9 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: "Website Builder",
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description: "Drag and drop components and use ai to generate new components",
             iconPosition: "left",
             delay: 0.6,
           },
@@ -184,7 +185,7 @@ const HeroSection: React.FC = () => {
             title: "Themable",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "More than 10+ themes is being made and free to be used",
             iconPosition: "left",
             delay: 0.8,
           },
@@ -267,7 +268,7 @@ const HighlightsSection = () => {
         name="Renata Alink"
         description="Founder"
         avatar="/static/images/avatar.jpg"
-        gradient={["pink.200", "purple.500"]}
+        gradient={["pink.200", "blue.500"]}
       >
         “Saas UI helped us set up a beautiful modern UI in no time. It saved us
         hundreds of hours in development time and allowed us to focus on
@@ -304,7 +305,7 @@ const HighlightsSection = () => {
             <Tag
               key={value}
               variant="subtle"
-              colorScheme="purple"
+              colorScheme="blue"
               rounded="full"
               px="3"
             >
@@ -467,13 +468,7 @@ export default Home;
 export async function getStaticProps() {
   return {
     props: {
-      announcement: {
-        title: "Support us by becoming a stargazer! 🚀 ",
-        description:
-          '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
-        href: "https://github.com/saas-js/saas-ui",
-        action: false,
-      },
+   
     },
   };
 }
