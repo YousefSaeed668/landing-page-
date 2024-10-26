@@ -32,7 +32,6 @@ const Navigation: React.FC = () => {
   useUpdateEffect(() => {
     mobileNavBtnRef.current?.focus();
   }, [mobileNav.isOpen]);
-
   return (
     <HStack spacing="2" flexShrink={0}>
       {siteConfig.header.links.map(({ href, id, ...props }, i) => {

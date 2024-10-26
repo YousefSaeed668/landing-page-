@@ -1,7 +1,7 @@
-import { Button, ButtonProps } from '@chakra-ui/react'
-import NextLink, { LinkProps } from 'next/link'
+import { Button, ButtonProps } from "@chakra-ui/react";
+import NextLink, { LinkProps } from "next/link";
 
-export type ButtonLinkProps = LinkProps & ButtonProps
+export type ButtonLinkProps = LinkProps & ButtonProps;
 
 export const ButtonLink: React.FC<ButtonLinkProps> = ({
   href,
@@ -10,7 +10,9 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
 }) => {
   return (
     <NextLink href={href} passHref>
-      <Button {...props}>{children}</Button>
+      <Button style={{ backgroundColor: "#2563eb" }} {...props}>
+        {children}
+      </Button>
     </NextLink>
-  )
-}
+  );
+};

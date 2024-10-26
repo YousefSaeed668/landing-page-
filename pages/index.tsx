@@ -103,11 +103,10 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-             Wavyi is a <Em>E-commerce Builder</Em>
-              <Br /> that simplifies the process of building <Br />{" "}
-              intuitive e-commerce platforms quickly and efficiently.
-            </FallInPlace>
-            
+                Wavyi is a <Em>E-commerce Builder</Em>
+                <Br /> that simplifies the process of building <Br /> intuitive
+                e-commerce platforms quickly and efficiently.
+              </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
@@ -116,7 +115,11 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="blue" size="lg" href="/signup">
+                <ButtonLink
+                  colorScheme="blue"
+                  size="lg"
+                  href="https://app.wavyi.com/#/login/signUp"
+                >
                   Sign Up
                 </ButtonLink>
                 <ButtonLink
@@ -153,7 +156,7 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/herosection.png"
                   layout="fixed"
                   width={1200}
                   height={762}
@@ -177,7 +180,8 @@ const HeroSection: React.FC = () => {
           {
             title: "Website Builder",
             icon: FiSmile,
-            description: "Drag and drop components and use ai to generate new components",
+            description:
+              "Drag and drop components and use ai to generate new components",
             iconPosition: "left",
             delay: 0.6,
           },
@@ -467,8 +471,6 @@ export default Home;
 
 export async function getStaticProps() {
   return {
-    props: {
-   
-    },
+    props: {},
   };
 }
