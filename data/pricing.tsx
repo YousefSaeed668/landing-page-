@@ -1,114 +1,148 @@
-import { HStack, Text } from '@chakra-ui/react'
+import { HStack, Text } from "@chakra-ui/react";
 
 export default {
-  title: 'Pricing for every stage',
+  title: "Pricing for every stage",
   description:
-    'Pay once and get life-time access to our high quality components.',
+    "Pay once and get life-time access to our high quality components.",
   plans: [
     {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      id: "Free",
+      title: "Free",
+      description: "Basic compoents, perfect to get started.",
+      price: "Free",
       features: [
         {
-          title: 'MIT License',
+          title: "other employees",
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: "Print a distinctive invoice with a QR code",
         },
         {
-          title: 'Form (react-hook-form)',
+          title: "Print a custom message for your invoices",
         },
         {
-          title: 'Modals manager',
+          title: "Store activity and accounts reports",
         },
         {
-          title: 'Hotkeys',
+          title: "Access to your customer database",
         },
         {
-          title: 'Web3 components',
+          title: "Add an expense system",
         },
         {
-          title: 'And much more...',
+          title: "Special link for your online store",
         },
       ],
       action: {
-        href: '#',
+        href: "https://app.wavyi.com/#/login/signUp",
       },
     },
     {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      id: "SmallProjects",
+      title: "Small Projects",
+      description: "Basic compoents, perfect to get started.",
+      price: "600 EGP",
+      features: [
+        {
+          title: "5 other employees",
+        },
+        {
+          title: "Print a distinctive invoice with a QR code",
+        },
+        {
+          title: "Print a custom message for your invoices",
+        },
+        {
+          title: "Store activity and accounts reports",
+        },
+        {
+          title: "Access to your customer database",
+        },
+        {
+          title: "Add an expense system",
+        },
+        {
+          title: "Special link for your online store",
+        },
+      ],
+      action: {
+        href: "https://app.wavyi.com/#/login/signUp",
+      },
+    },
+    {
+      id: "EnterprisePackage",
+      title: "Enterprise Package",
+      description: "Complete frontend stack for bootstrappers and small teams.",
+      price: "1000 EGP",
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: "Add an unlimited number of products",
         },
         {
-          title: 'One developer',
+          title: "10 other employees",
         },
         {
-          title: 'Advanced components',
+          title: "Print a distinctive invoice with a QR code",
         },
         {
-          title: 'Multiple themes',
+          title: "Print a custom message for your invoices",
         },
         {
-          title: 'Next.js and Electron boilerplates',
+          title: " Store activity and accounts reports",
         },
         {
-          title: 'Private discord community',
+          title: "Access to your customer database",
         },
         {
-          title: '1 year of updates',
+          title: " Add an expense system",
+        },
+        {
+          title: "Special link for your online store",
         },
         null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
+        href: "https://app.wavyi.com/#/login/signUp",
       },
     },
     {
-      id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
-      price: (
-        <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
-        </HStack>
-      ),
+      id: "SuperPackage",
+      title: "Super Package",
+      description: "Unlimited license for growing teams.",
+      price: "1400 EGP",
       features: [
         {
-          title: 'Unlimited projects',
+          title: " Unlimted monthly requests",
         },
         {
-          title: 'Unlimited developers',
+          title: " Add an unlimited number of products",
         },
         {
-          title: '1 year of updates',
+          title: "20 other employees",
         },
         {
-          title: 'Everything from Bootstrap',
+          title: "Print a distinctive invoice with a QR code",
         },
-        null,
         {
-          title: 'Private beta access',
-          iconColor: 'green.500',
+          title: "Print a custom message for your invoices",
+        },
+        {
+          title: "Store activity and accounts reports",
+        },
+        {
+          title: "Access to your customer database",
+        },
+        {
+          title: "Add an expense system",
+        },
+        {
+          title: "Special link for your online store",
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        href: "https://app.wavyi.com/#/login/signUp",
       },
     },
   ],
-}
+};
